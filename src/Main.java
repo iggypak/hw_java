@@ -1,12 +1,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        int milkAmount = 200; // ml
-        int powderAmount = 5; // g
-        int eggsCount = 3; // items
-        int sugarAmount = 5; // g
-        int oilAmount = 30; // ml
-        int appleCount = 8; // items
+        int milkAmount = 2000; // ml
+        int powderAmount = 50; // g
+        int eggsCount = 30; // items
+        int sugarAmount = 50; // g
+        int oilAmount = 300; // ml
+        int appleCount = 80; // items
 
         // Example
         // apples - 5
