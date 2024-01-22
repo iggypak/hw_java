@@ -6,18 +6,15 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Введите число от 1 до 12 для расчета факториала: ");
+        System.out.print("Введите число для нахождения пар множителей, произведением которых его можно получить: ");
         int value = new Scanner(System.in).nextInt();
-        int factorial = 1;
-        boolean isValid = value >= 1 && value <= 12;
-        String message = "Введено некорректное число для расчета!";
 
-        if (isValid){
-            for (int i = 1; i < value; i++){
-                factorial *= i;
+        for (int i = 1; i <= value; i = i + 1){
+            for (int j = 1; j <= value; j = j + 1){
+                if (i * j == value){
+                    System.out.println(i + " * " + j);
+                }
             }
-            message = "Факториал числа" + value + " равен: " + factorial;
         }
-        System.out.printf(message);
     }
 }
